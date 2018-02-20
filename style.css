@@ -1,0 +1,357 @@
+body{
+  background-color: black;
+  color:green;
+}
+.hoverline{
+  text-decoration:line-through;
+}
+.intro{
+  position:fixed;
+  top:0;
+  left:0;
+  margin:0;
+  padding:0;
+  text-align:center;
+  width:100%;
+  height:100%;
+  font-size:70px;
+  animation: introApparaitre 10s;
+  opacity:0;
+  z-index: 2;
+}
+.screen{
+  pointer-events: none;
+  opacity: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+@keyframes introApparaitre{
+  0%{opacity:0;}
+  25%{opacity:1;}
+  37%{opacity:0.8;}
+  50%{opacity:1;}
+  62%{opacity:0.8;}
+  75%{opacity:1;}
+  100%{opacity:0;}
+}
+#terminal{
+  border:none;
+  height:95%;
+  overflow-y: auto;
+  position:fixed;
+  width:calc(100%-3em);
+  opacity:1;
+  animation:termimalApparaitre 15s;
+  z-index: 5;
+}
+#root{
+  bottom:0;
+  left: 0;
+  height:2.6em;
+  position:fixed;
+  text-align: center;
+  width:1em;
+  opacity:1;
+  z-index:2;
+  animation:termimalApparaitre 15s;
+}
+#input {
+  background: black;
+  border: none;
+  bottom: 1em;
+  cursor: text;
+  color:green;
+  height: 1.9em;
+  margin: 0;
+	outline: none;
+  position: fixed;
+  right: 0;
+  width: calc(100% - 1em);
+  margin-bottom:0.5em;
+  animation:termimalApparaitre 15s;
+  z-index: 500;
+}
+#connectRelay,#listRelay,#listDevices,#connectPhone,#trojan,#disconnect{
+ opacity:0;
+ z-index: 1;
+}
+#objectives {
+  opacity: 1;
+  position: fixed;
+  right: .5em;
+  top: 1em;
+  width: 25%;
+  animation:termimalApparaitre 15s;
+  z-index: 1;
+}
+@keyframes termimalApparaitre{
+  0%{opacity:0;}
+  75%{opacity:0;}
+  100%{opacity:1;}
+}
+#blinking {
+  -webkit-animation: blink 1s linear 0s infinite;
+  -moz-animation: blink 1s linear 0s infinite;
+  -ms-animation: blink 1s linear 0s infinite;
+  -o-animation: blink 1s linear 0s infinite;
+  animation: blink 1s linear 0s infinite;
+  z-index: 1;
+}
+
+@-webkit-keyframes blink {
+  from {
+    color: #000;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+@-moz-keyframes blink {
+  from {
+    color: #000;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+@-ms-keyframes blink {
+  from {
+    color: #000;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+@-o-keyframes blink {
+  from {
+    color: #000;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+
+@keyframes blink {
+  from {
+    color: #000;
+  }
+
+  to {
+    color: #fff;
+  }
+}
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0em 0em .5em rgba(0, 255, 0, .25);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0em 0em .25em rgba(0, 255, 0, .5);
+}
+
+.lol{
+  height: 200px;
+  width: 300px;
+  background-image: url("logo_lol.png");
+  background-position: center center;
+  background-size: 100%;
+  z-index: 9;
+  margin-top:50px;
+}
+.pgw{
+  height: 300px;
+  width:300px;
+  background-image: url("PGW_logo.png");
+  background-size: 100%;
+  z-index: 8;
+  background-position: center center;
+}
+.hearthstone{
+  height: 200px;
+  width:300px;
+  background-image: url("logo_hearthstone.png");
+  background-size: 100%;
+  z-index: 7;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top:50px;
+}
+.csgo{
+  height: 200px;
+  width: 300px;
+  background-image: url("logo_csgo.png");
+  background-size: 100%;
+  z-index: 6;
+  background-position: center center;
+  margin-top:50px;
+}
+
+.smash{
+  height: 200px;
+  width: 300px;
+  background-image: url("smash-64.png");
+  background-size: 100%;
+  z-index: 6;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-top:50px;
+}
+.sudria{
+  height: 300px;
+  width: 300px;
+  background-image: url("guilde_logo.png");
+  background-position: center center;
+  background-size: 100%;
+  z-index: 10;
+  line-height: 300px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 0 red,
+    -1px 1px 0 red,
+    1px -1px 0 red,
+    -1px -1px 0 red,
+    0px 1px 0 red,
+    0px -1px 0 red,
+    -1px 0px 0 red,
+    1px 0px 0 red,
+    2px 2px 0 red,
+    -2px 2px 0 red,
+    2px -2px 0 red,
+    -2px -2px 0 red,
+    0px 2px 0 red,
+    0px -2px 0 red,
+    -2px 0px 0 red,
+    2px 0px 0 red,
+    1px 2px 0 red,
+    -1px 2px 0 red,
+    1px -2px 0 red,
+    -1px -2px 0 red,
+    2px 1px 0 red,
+    -2px 1px 0 red,
+    2px -1px 0 red,
+    -2px -1px 0 red;
+    margin-top:10px;
+}
+/**/
+.fakeButtons {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+  z-index: 9;
+}
+
+.fakeMinimize {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+  z-index: 9;
+}
+
+.fakeZoom {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+  z-index: 9;
+}
+
+.fakeMenu {
+  width: 350px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  z-index: 9;
+}
+.popSmash{
+  margin-top: -340px;
+}
+.popSudriaTitre{
+  margin-top: -340px;
+}
+.popCSGO{
+  margin-top:-340px;
+}
+.popPGW{
+  margin-top: -340px;
+}
+.popHearthstone{
+  margin-top: -340px;
+}
+
+
+.fakeScreen {
+  background-color: #151515;
+  box-sizing: border-box;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 9;
+  border: 1px solid #2c2c2c;
+  border-width:0 1px 1px;
+}
+
+p {
+  position: relative;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  z-index: 9;
+}
+
+.blueScreen{
+    position:absolute;
+    top:0;
+    left:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    background-color: #3d5dff;
+    color:white;
+    overflow:hidden;
+    opacity: 0;
+}
+.bords{
+    padding:15%;
+}
+.smiley{
+    font-size:80px;
+}
+.explications{
+    width:65%;
+    font-size:25px;
+    margin-top:25px;
+    margin-bottom:50px;
+}
+.savoirPlus{
+    font-size:15px;
+    width:65%;
+}

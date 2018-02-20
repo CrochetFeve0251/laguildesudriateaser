@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <h1 id="intro" class="intro">A few days ago</h1>
+    <div id="terminal">
+    <div>Loading...<span id="blinking">_</span></div>
+    </div>
+    <div id="root">></div>
+    <input id="input" type="text" placeholder="Enter your command here ..." autofocus/>
+    <ol id=objectives>
+        <h3>Objectives :</h3>
+        <li id="help">Type 'help' in the console at the bottom of the screen.</li>
+        <li id="connectRelay">Connect to the phone relay (connect phone.relay)</li>
+        <li id="listDevices">List all connected devices. (nmap -sL phone.relay)</li>
+        <li id="connectPhone">Connect to the phone.</li>
+        <li id="trojan">Send the trojan.</li>
+        <li id="disconnect">Disconnect from the device.</li>
+    </ol>
+    <audio autoplay loop id="audioPlayer">
+        <source src="theme.mp3" type="audio/mp3">
+    </audio>
+    <div class="screen">
+    <div class="fakeMenu popLOL">
+      <div class="fakeButtons fakeClose" onclick="fermer('.popLOL','.popLOLContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeMinimize" onclick="fermer('.popLOL','.popLOLContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeZoom"></div>
+    </div>
+    <div class="fakeScreen popLOLContenu">
+      <div class="lol"></div>
+    </div>
+    <div class="fakeMenu popCSGO">
+      <div class="fakeButtons fakeClose" onclick="fermer('.popCSGO','.popCSGOContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeMinimize" onclick="fermer('.popCSGO','.popCSGOContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeZoom"></div>
+    </div>
+    <div class="fakeScreen popCSGOContenu">
+      <div class="csgo"></div>
+    </div>
+    <div class="fakeMenu popHearthstone">
+      <div class="fakeButtons fakeClose" onclick="fermer('.popHearthstone','.popHearthstoneContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeMinimize" onclick="fermer('.popHearthstone','.popHearthstoneContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeZoom"></div>
+    </div>
+    <div class="fakeScreen popHearthstoneContenu">
+      <div class="hearthstone"></div>
+    </div>
+    <div class="fakeMenu popPGW">
+      <div class="fakeButtons fakeClose" onclick="fermer('.popPGW','.popPGWContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeMinimize" onclick="fermer('.popPGW','.popPGWContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeZoom"></div>
+    </div>
+    <div class="fakeScreen popPGWContenu">
+      <div class="pgw"></div>
+    </div>
+    <div class="fakeMenu popSmash">
+      <div class="fakeButtons fakeClose" onclick="fermer('.popSmash','.popSmashTitre');popUp+=1;"></div>
+      <div class="fakeButtons fakeMinimize" onclick="fermer('.popSmash','.popSmashTitre');popUp+=1;"></div>
+      <div class="fakeButtons fakeZoom"></div>
+    </div>
+    <div class="fakeScreen popSmashTitre">
+      <div class="smash"></div>
+    </div>
+    <div class="fakeMenu popSudriaTitre">
+      <div class="fakeButtons fakeClose" onclick="fermer('.popSudriaTitre','.popSudriaContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeMinimize" onclick="fermer('.popSudriaTitre','.popSudriaContenu');popUp+=1;"></div>
+      <div class="fakeButtons fakeZoom"></div>
+    </div>
+    <div class="fakeScreen popSudriaContenu">
+      <div class="sudria">La guilde</div>
+    </div>
+  </div>
+   <div class="blueScreen">
+            <div class="bords">
+                <div class="smiley">:(</div>
+                <div class="explications">Your PC ran into a problem and need to restart. We're just collecting some error info, and then we'll restart for you.</div>
+                <div class="savoirPlus">If you'd like to know more, you can search online later for this error: ALWAYS_LOOK_AT_YOUR_BACK</div>
+            </div>
+        </div>
+</body>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+</html>
